@@ -447,30 +447,94 @@ img {
 }
 
 /* Kontak Section */
-.contact-details {
-    max-width: 600px;
-    margin: 2rem auto;
-    text-align: left;
+#kontak {
+    text-align: center; /* Judul utama "Hubungi Saya" dan paragraf pembuka tetap rata tengah */
 }
-.contact-details p {
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
+
+.contact-info-wrapper {
+    display: flex;
+    flex-direction: column; /* Item kontak akan tersusun vertikal */
+    gap: 1.8rem; /* Jarak antar item kontak */
+    max-width: 700px; /* Lebar maksimum blok kontak */
+    margin: 3rem auto; /* Pusatkan blok dan beri jarak atas/bawah */
+    /* text-align: left; /* Tidak perlu di sini, karena .contact-item-text akan mengaturnya */
 }
-.contact-details p i {
-    width: 30px; /* Align icons */
-    margin-right: 10px;
-    color: var(--accent-color);
+
+.contact-item {
+    display: flex;
+    align-items: flex-start; /* Ikon dan blok teks akan mulai dari atas (lebih aman) */
+    /* Untuk mencoba rata tengah vertikal antara ikon & teks, ganti flex-start dengan: align-items: center; */
+    background-color: rgba(255, 255, 255, 0.07); /* Latar belakang transparan halus */
+    padding: 1.8rem; /* Ruang di dalam setiap item */
+    border-radius: 10px; /* Sudut yang sedikit membulat */
+    border-left: 5px solid var(--accent-color); /* Aksen garis di kiri */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Bayangan halus untuk kedalaman */
 }
+
+.contact-item:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    transform: translateY(-3px); /* Efek terangkat saat hover */
+}
+
+.contact-item-icon {
+    flex-shrink: 0; /* Agar ikon tidak mengecil */
+    margin-right: 1.8rem; /* Jarak antara ikon dan teks */
+    margin-top: 5px; /* Penyesuaian vertikal kecil jika align-items: flex-start digunakan, sesuaikan jika perlu */
+}
+
+.contact-item-icon i {
+    font-size: 1.8rem; /* Ukuran ikon yang proporsional */
+    color: var(--accent-color); /* Warna ikon sesuai aksen */
+}
+
+.contact-item-text {
+    text-align: left; /* PENTING: Detail teks rata kiri untuk keterbacaan optimal */
+    width: 100%; /* Memastikan blok teks menggunakan sisa ruang yang tersedia */
+}
+
+.contact-item-text h4 {
+    font-family: var(--heading-font);
+    font-size: 1.25rem; /* Ukuran judul kategori kontak */
+    color: var(--light-text-color); /* Warna terang untuk teks di latar gelap */
+    margin-top: 0;
+    margin-bottom: 0.5rem; /* Jarak bawah heading */
+    /* Jika Anda HANYA ingin judul ini rata tengah, tambahkan baris berikut: */
+    /* text-align: center; */
+}
+
+.contact-item-text p {
+    margin-bottom: 0; /* Hapus margin bawah default paragraf */
+    font-size: 0.95rem; /* Ukuran teks detail kontak */
+    line-height: 1.6;
+    color: var(--light-text-color); /* Pastikan teks utama juga terang */
+}
+
+.contact-item-text p a {
+    color: var(--light-text-color); /* Warna link standar */
+    text-decoration: underline; /* Garis bawah untuk menandakan link */
+    text-decoration-color: rgba(255,255,255,0.3); /* Garis bawah lebih halus */
+    transition: color 0.3s ease, text-decoration-color 0.3s ease;
+}
+
+.contact-item-text p a:hover {
+    color: var(--accent-color); /* Warna link saat hover */
+    text-decoration-color: var(--accent-color); /* Garis bawah juga berubah warna */
+}
+
+/* Gaya untuk .social-icons-footer (pastikan ini ada dan sesuai) */
 .social-icons-footer {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
+
 .social-icons-footer a {
     color: var(--light-text-color);
     font-size: 2rem;
     margin: 0 15px;
     transition: color 0.3s ease, transform 0.3s ease;
 }
+
 .social-icons-footer a:hover {
     color: var(--accent-color);
     transform: translateY(-3px);
