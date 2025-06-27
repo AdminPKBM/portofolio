@@ -1,59 +1,107 @@
-<!-- ringkasan.html -->
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ringkasan - Ruli Lesmana</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link href="style/style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link href="style/style.css" rel="stylesheet" />
+  <style>
+    .lang-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+  </style>
 </head>
 <body>
-  <div class="lang-toggle">
-    <button class="btn btn-sm btn-outline-primary" onclick="switchLang('id')">🇮🇩 ID</button>
-    <button class="btn btn-sm btn-outline-secondary" onclick="switchLang('en')">🇺🇸 EN</button>
-    <button class="btn btn-sm btn-outline-success" onclick="switchLang('ms')">🇲🇾 MS</button>
-    <button class="btn btn-sm btn-outline-danger" onclick="switchLang('ru')">🇷🇺 RU</button>
-    <button class="btn btn-sm btn-outline-dark" onclick="switchLang('ar')">🇸🇦 AR</button>
-    <button class="btn btn-sm btn-outline-warning" onclick="switchLang('de')">🇩🇪 DE</button>
-  </div>
 
-  <div class="container py-5">
-    <h2 class="section-title text-center" data-aos="fade-up" data-lang-id="[[TITLE_ID]]" data-lang-en="[[TITLE_EN]]" data-lang-ms="[[TITLE_MS]]" data-lang-ru="[[TITLE_RU]]" data-lang-ar="[[TITLE_AR]]" data-lang-de="[[TITLE_DE]]">
-      [[TITLE_ID]]
-    </h2>
-    <div class="underline mb-4" data-aos="zoom-in"></div>
-    <div class="row justify-content-center">
-      <div class="col-md-10" data-aos="fade-up" data-aos-delay="100">
-        <div class="card-custom p-4">
-          [[CONTENT_MULTILANG]]
-        </div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Ruli Lesmana</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="ringkasan.html">Ringkasan</a></li>
+        <li class="nav-item"><a class="nav-link" href="pengalaman.html">Pengalaman</a></li>
+        <li class="nav-item"><a class="nav-link" href="pendidikan.html">Pendidikan</a></li>
+        <li class="nav-item"><a class="nav-link" href="kemampuan.html">Kemampuan</a></li>
+        <li class="nav-item"><a class="nav-link" href="publikasi.html">Publikasi</a></li>
+        <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Tombol Bahasa -->
+<div class="lang-toggle">
+  <button class="btn btn-sm btn-outline-primary" onclick="switchLang('id')">🇮🇩 ID</button>
+  <button class="btn btn-sm btn-outline-secondary" onclick="switchLang('en')">🇺🇸 EN</button>
+  <button class="btn btn-sm btn-outline-success" onclick="switchLang('ms')">🇲🇾 MS</button>
+  <button class="btn btn-sm btn-outline-danger" onclick="switchLang('ru')">🇷🇺 RU</button>
+  <button class="btn btn-sm btn-outline-dark" onclick="switchLang('ar')">🇸🇦 AR</button>
+  <button class="btn btn-sm btn-outline-warning" onclick="switchLang('de')">🇩🇪 DE</button>
+</div>
+
+<!-- Konten -->
+<div class="container py-5">
+  <h2 class="section-title text-center" data-aos="fade-up"
+      data-lang-id="Ringkasan"
+      data-lang-en="Summary"
+      data-lang-ms="Ringkasan"
+      data-lang-ru="Резюме"
+      data-lang-ar="الملخص"
+      data-lang-de="Zusammenfassung">
+    Ringkasan
+  </h2>
+  <div class="underline mb-4" data-aos="zoom-in"></div>
+  <div class="row justify-content-center">
+    <div class="col-md-10" data-aos="fade-up" data-aos-delay="100">
+      <div class="card-custom p-4">
+        <p class="lead text-center"
+           data-lang-id="Saya adalah seorang pendidik dan instruktur teknologi dengan pengalaman lebih dari 10 tahun dalam bidang Informatika, Keterampilan Komputer, dan Teknologi Informasi. Saat ini, saya mengajar di SMKN Bojonggambir, aktif sebagai Tutor Informatika di PKBM Celah Cahaya, serta mengelola Taman Baca Masyarakat (TBM) AIUEO di Kampung Sukawangi, Singajaya, Garut sebagai sekretaris di Komunitas Ngejah sejak 2010."
+           data-lang-en="I am an educator and technology instructor with over 10 years of experience in Informatics, Computer Skills, and Information Technology. I currently teach at SMKN Bojonggambir, serve as an Informatics Tutor at PKBM Celah Cahaya, and manage the AIUEO Community Reading Park in Sukawangi Village, Garut, as secretary of the Ngejah Community since 2010."
+           data-lang-ms="Saya seorang pendidik dan instruktur teknologi dengan pengalaman lebih dari 10 tahun dalam bidang Informatik, Kemahiran Komputer, dan Teknologi Maklumat. Kini saya mengajar di SMKN Bojonggambir, sebagai Tutor Informatik di PKBM Celah Cahaya, serta mengelola TBM AIUEO di Kampung Sukawangi, Garut."
+           data-lang-ru="Я преподаватель и инструктор по технологиям с более чем 10-летним опытом в области информатики и ИТ. В настоящее время я преподаю в SMKN Bojonggambir, являюсь тьютором в PKBM Celah Cahaya и управляю общественной библиотекой AIUEO в деревне Сукаванги, Гарут."
+           data-lang-ar="أنا معلم ومدرب تقني بخبرة تزيد عن 10 سنوات في مجال المعلوماتية وتكنولوجيا المعلومات. أدرّس حاليًا في SMKN Bojonggambir، وأعمل كمدرب في PKBM Celah Cahaya، وأدير مكتبة مجتمع AIUEO في قرية Sukawangi، Garut."
+           data-lang-de="Ich bin Pädagoge und Technologie-Ausbilder mit über 10 Jahren Erfahrung in Informatik und Informationstechnologie. Derzeit unterrichte ich an der SMKN Bojonggambir, bin Tutor bei PKBM Celah Cahaya und verwalte die AIUEO-Bibliothek in Sukawangi, Garut.">
+          Saya adalah seorang pendidik dan instruktur teknologi...
+        </p>
+
+        <p class="text-center"
+           data-lang-id="Lulusan Program Guru Penggerak angkatan 10 Kabupaten Tasikmalaya, saya berupaya meningkatkan metode pembelajaran inovatif untuk membentuk siswa yang kompeten di era digital. Saya juga sedang menempuh studi Magister Informatika di Universitas Amikom Yogyakarta."
+           data-lang-en="As a graduate of the Teacher Leader Program (Angkatan 10, Tasikmalaya), I strive to improve innovative teaching methods to shape digitally competent students. I am currently pursuing a Master's degree in Informatics at Amikom University Yogyakarta."
+           data-lang-ms="Lulusan Program Guru Penggerak (angkatan 10 Tasikmalaya), saya berusaha meningkatkan kaedah pembelajaran inovatif bagi membentuk pelajar yang kompeten secara digital. Kini saya mengikuti pengajian Sarjana Informatik di Universiti Amikom Yogyakarta."
+           data-lang-ru="Выпускник программы подготовки учителей (поток 10, Тасикмалая), я стремлюсь улучшить инновационные методы обучения. Сейчас я учусь в магистратуре по информатике в университете Амиком Джокьякарта."
+           data-lang-ar="كخريج برنامج المعلم القائد (الدفعة 10، تاسيكمالايا)، أعمل على تحسين أساليب التعليم المبتكرة. أدرس حاليًا ماجستير المعلوماتية في جامعة أميكوم يوجياكرتا."
+           data-lang-de="Als Absolvent des Lehrerförderprogramms (Jahrgang 10, Tasikmalaya) strebe ich danach, innovative Lehrmethoden zu verbessern. Derzeit studiere ich Informatik im Master an der Universität Amikom Yogyakarta.">
+          Lulusan Program Guru Penggerak angkatan 10 Kabupaten Tasikmalaya...
+        </p>
       </div>
     </div>
   </div>
+</div>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/lang.js"></script>
-  <script>AOS.init();</script>
-  <div class="container py-5">
-    <h2 class="section-title text-center" data-aos="fade-up">Ringkasan</h2>
-    <div class="underline mb-4" data-aos="zoom-in"></div>
-    <div class="row justify-content-center">
-      <div class="col-md-10" data-aos="fade-up" data-aos-delay="100">
-        <div class="card-custom p-4">
-          <p class="lead text-center">
-            Saya adalah seorang pendidik dan instruktur teknologi dengan pengalaman lebih dari 10 tahun dalam bidang Informatika, Keterampilan Komputer, dan Teknologi Informasi. Saat ini, saya mengajar di SMKN Bojonggambir, aktif sebagai Tutor Informatika di PKBM Celah Cahaya, serta mengelola Taman Baca Masyarakat (TBM) AIUEO di Kampung Sukawangi, Singajaya, Garut sebagai sekretaris di Komunitas Ngejah sejak 2010.
-          </p>
-          <p class="text-center">
-            Lulusan Program Guru Penggerak angkatan 10 Kabupaten Tasikmalaya, saya berupaya meningkatkan metode pembelajaran inovatif untuk membentuk siswa yang kompeten di era digital. Saya juga sedang menempuh studi Magister Informatika di Universitas Amikom Yogyakarta.
-          </p>
-        </div>
-      </div>
-    </div>
+<!-- Footer -->
+<footer class="text-center text-white py-3 bg-primary mt-5">
+  <div class="container">
+    <p>&copy; <span id="currentYear"></span> Ruli Lesmana. Dibuat dengan <i class="fas fa-heart"></i> dan <i class="fas fa-coffee"></i>.</p>
   </div>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script src="js/lang.js"></script>
+<script>
+  document.getElementById("currentYear").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
