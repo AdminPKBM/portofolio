@@ -8,18 +8,28 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Lato', sans-serif; }
+    body { font-family: 'Lato', sans-serif; background-color: #f2f4f8; }
     .hero-section {
-      background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.4)), url('https://images.unsplash.com/photo-1519389950473-47ba0277781c') center/cover;
+      background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.4)), url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1500&q=80') center/cover;
       color: white;
       padding: 100px 0;
       text-align: center;
     }
-    .hero-profile-img { border-radius: 50%; max-width: 200px; }
+    .hero-profile-img { border-radius: 50%; max-width: 180px; border: 5px solid #fff; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
     .section-padding { padding: 60px 0; }
-    .section-title { font-family: 'Playfair Display', serif; font-size: 2rem; text-align: center; }
-    .underline { width: 60px; height: 4px; background-color: #0d6efd; margin: 0 auto 30px; }
-    footer { padding: 20px 0; background-color: #f8f9fa; text-align: center; }
+    .section-title { font-family: 'Playfair Display', serif; font-size: 2rem; text-align: center; color: #1a1a1a; }
+    .underline { width: 60px; height: 4px; background-color: #0d6efd; margin: 0 auto 30px; border-radius: 4px; }
+    footer { padding: 20px 0; background-color: #0d6efd; text-align: center; color: white; }
+    footer i { color: #ffdd57; }
+    .bg-light { background-color: #ffffff !important; }
+    .bg-dark { background-color: #1f2937 !important; }
+    .text-light { color: #f8f9fa !important; }
+    .card-custom {
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      padding: 20px;
+    }
   </style>
 </head>
 <body>
@@ -48,7 +58,7 @@
     <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCPLiI993KBlyjtC3d7gBVVQtGpv0jEgEo81HeRHvRULdagggenc5tNrV32XxeeRFOIINCIgJMIgxNjic3BMQUSMG1egOPMahRdbFza20uaX5wYiXFdRIPZVnmGybKxGbUnLdmtBfVz_M_dowyCV-8zpwfzvkTqHDkKx-ElOT4_cVxeaTZ40_GYrnEewoj/s320/Gemini_Generated_Image_jr42vkjr42vkjr42.png" class="hero-profile-img mb-4" alt="Foto Profil">
     <h1 class="display-5 fw-bold">Ruli Lesmana, S.T.</h1>
     <p class="lead">Pendidik & Instruktur Teknologi | Penggerak Literasi Digital</p>
-    <a href="#ringkasan" class="btn btn-primary">Selengkapnya</a>
+    <a href="#ringkasan" class="btn btn-outline-light">Selengkapnya</a>
   </div>
 </header>
 
@@ -56,7 +66,7 @@
   <div class="container">
     <h2 class="section-title">Ringkasan</h2>
     <div class="underline"></div>
-    <p class="lead text-center">(Isi ringkasan singkat tentang profil dan visi pribadi Anda)</p>
+    <p class="lead text-center">Saya adalah seorang pendidik teknologi dengan semangat untuk inovasi pembelajaran digital dan pengembangan masyarakat melalui literasi digital.</p>
   </div>
 </section>
 
@@ -64,20 +74,24 @@
   <div class="container">
     <h2 class="section-title">Pengalaman</h2>
     <div class="underline"></div>
-    <div class="row">
-      <div class="col-md-6 mb-4">
-        <h5>Guru Informatika</h5>
-        <p class="text-muted">SMK Negeri Bojonggambir (2019 – Sekarang)</p>
-        <ul>
-          <li>Mengajar dan mengembangkan kurikulum teknologi</li>
-        </ul>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card-custom">
+          <h5>Guru Informatika</h5>
+          <p class="text-muted">SMK Negeri Bojonggambir (2019 – Sekarang)</p>
+          <ul>
+            <li>Mengajar dan mengembangkan kurikulum teknologi</li>
+          </ul>
+        </div>
       </div>
-      <div class="col-md-6 mb-4">
-        <h5>Tutor Informatika</h5>
-        <p class="text-muted">PKBM Celah Cahaya (2019 – Sekarang)</p>
-        <ul>
-          <li>Membimbing pembelajaran nonformal bidang TIK</li>
-        </ul>
+      <div class="col-md-6">
+        <div class="card-custom">
+          <h5>Tutor Informatika</h5>
+          <p class="text-muted">PKBM Celah Cahaya (2019 – Sekarang)</p>
+          <ul>
+            <li>Membimbing pembelajaran nonformal bidang TIK</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -87,16 +101,20 @@
   <div class="container">
     <h2 class="section-title">Pendidikan</h2>
     <div class="underline"></div>
-    <div class="row">
-      <div class="col-md-6 mb-3">
-        <h5>Magister Informatika</h5>
-        <p>Universitas Amikom Yogyakarta</p>
-        <small>Sedang berjalan</small>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card-custom">
+          <h5>Magister Informatika</h5>
+          <p>Universitas Amikom Yogyakarta</p>
+          <small>Sedang berjalan</small>
+        </div>
       </div>
-      <div class="col-md-6 mb-3">
-        <h5>S1 Teknik Informatika</h5>
-        <p>STMIK DCI Tasikmalaya</p>
-        <small>2008 – 2012</small>
+      <div class="col-md-6">
+        <div class="card-custom">
+          <h5>S1 Teknik Informatika</h5>
+          <p>STMIK DCI Tasikmalaya</p>
+          <small>2008 – 2012</small>
+        </div>
       </div>
     </div>
   </div>
@@ -106,23 +124,27 @@
   <div class="container">
     <h2 class="section-title">Kemampuan</h2>
     <div class="underline"></div>
-    <div class="row">
+    <div class="row g-4">
       <div class="col-md-6">
-        <h5>Hard Skills</h5>
-        <ul>
-          <li>Office 365 (90%)</li>
-          <li>Dasar Pemrograman (75%)</li>
-          <li>Pengembangan Aplikasi (70%)</li>
-          <li>Literasi Digital & Media (95%)</li>
-        </ul>
+        <div class="card-custom">
+          <h5>Hard Skills</h5>
+          <ul>
+            <li>Office 365 (90%)</li>
+            <li>Dasar Pemrograman (75%)</li>
+            <li>Pengembangan Aplikasi (70%)</li>
+            <li>Literasi Digital & Media (95%)</li>
+          </ul>
+        </div>
       </div>
       <div class="col-md-6">
-        <h5>Soft Skills</h5>
-        <ul>
-          <li>Kepemimpinan</li>
-          <li>Keterampilan Mengajar</li>
-          <li>Empati dan Komunikasi Efektif</li>
-        </ul>
+        <div class="card-custom">
+          <h5>Soft Skills</h5>
+          <ul>
+            <li>Kepemimpinan</li>
+            <li>Keterampilan Mengajar</li>
+            <li>Empati dan Komunikasi Efektif</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -145,17 +167,17 @@
     <h2 class="section-title text-white">Kontak</h2>
     <div class="underline"></div>
     <p class="text-center">Saya terbuka untuk kolaborasi dan peluang baru.</p>
-    <div class="row text-center">
+    <div class="row text-center g-4">
       <div class="col-md-4">
-        <i class="fas fa-map-marker-alt"></i>
+        <i class="fas fa-map-marker-alt fa-2x"></i>
         <p>Garut, Jawa Barat</p>
       </div>
       <div class="col-md-4">
-        <i class="fas fa-phone"></i>
+        <i class="fas fa-phone fa-2x"></i>
         <p>081223546686</p>
       </div>
       <div class="col-md-4">
-        <i class="fas fa-envelope"></i>
+        <i class="fas fa-envelope fa-2x"></i>
         <p>roeli.eunih.sjy@gmail.com</p>
       </div>
     </div>
