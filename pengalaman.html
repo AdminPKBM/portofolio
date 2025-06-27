@@ -1,63 +1,131 @@
-<!-- pengalaman.html -->
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pengalaman - Ruli Lesmana</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link href="style/style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link href="style/style.css" rel="stylesheet" />
+  <style>
+    .lang-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+  </style>
 </head>
 <body>
-  <div class="lang-toggle">
-    <button class="btn btn-sm btn-outline-primary" onclick="switchLang('id')">🇮🇩 ID</button>
-    <button class="btn btn-sm btn-outline-secondary" onclick="switchLang('en')">🇺🇸 EN</button>
-    <button class="btn btn-sm btn-outline-success" onclick="switchLang('ms')">🇲🇾 MS</button>
-    <button class="btn btn-sm btn-outline-danger" onclick="switchLang('ru')">🇷🇺 RU</button>
-    <button class="btn btn-sm btn-outline-dark" onclick="switchLang('ar')">🇸🇦 AR</button>
-    <button class="btn btn-sm btn-outline-warning" onclick="switchLang('de')">🇩🇪 DE</button>
-  </div>
 
-  <div class="container py-5">
-    <h2 class="section-title text-center" data-aos="fade-up" data-lang-id="[[TITLE_ID]]" data-lang-en="[[TITLE_EN]]" data-lang-ms="[[TITLE_MS]]" data-lang-ru="[[TITLE_RU]]" data-lang-ar="[[TITLE_AR]]" data-lang-de="[[TITLE_DE]]">
-      [[TITLE_ID]]
-    </h2>
-    <div class="underline mb-4" data-aos="zoom-in"></div>
-    <div class="row justify-content-center">
-      <div class="col-md-10" data-aos="fade-up" data-aos-delay="100">
-        <div class="card-custom p-4">
-          [[CONTENT_MULTILANG]]
-        </div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Ruli Lesmana</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="ringkasan.html">Ringkasan</a></li>
+        <li class="nav-item"><a class="nav-link active" href="pengalaman.html">Pengalaman</a></li>
+        <li class="nav-item"><a class="nav-link" href="pendidikan.html">Pendidikan</a></li>
+        <li class="nav-item"><a class="nav-link" href="kemampuan.html">Kemampuan</a></li>
+        <li class="nav-item"><a class="nav-link" href="publikasi.html">Publikasi</a></li>
+        <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Tombol Bahasa -->
+<div class="lang-toggle">
+  <button class="btn btn-sm btn-outline-primary" onclick="switchLang('id')">🇮🇩 ID</button>
+  <button class="btn btn-sm btn-outline-secondary" onclick="switchLang('en')">🇺🇸 EN</button>
+  <button class="btn btn-sm btn-outline-success" onclick="switchLang('ms')">🇲🇾 MS</button>
+  <button class="btn btn-sm btn-outline-danger" onclick="switchLang('ru')">🇷🇺 RU</button>
+  <button class="btn btn-sm btn-outline-dark" onclick="switchLang('ar')">🇸🇦 AR</button>
+  <button class="btn btn-sm btn-outline-warning" onclick="switchLang('de')">🇩🇪 DE</button>
+</div>
+
+<!-- Konten -->
+<div class="container py-5">
+  <h2 class="section-title text-center" data-aos="fade-up"
+      data-lang-id="Pengalaman"
+      data-lang-en="Experience"
+      data-lang-ms="Pengalaman"
+      data-lang-ru="Опыт"
+      data-lang-ar="الخبرة"
+      data-lang-de="Erfahrung">
+    Pengalaman
+  </h2>
+  <div class="underline mb-4" data-aos="zoom-in"></div>
+
+  <div class="row g-4">
+    <div class="col-md-6" data-aos="fade-right">
+      <div class="card-custom p-4">
+        <h5 data-lang-id="Guru Informatika"
+            data-lang-en="Informatics Teacher"
+            data-lang-ms="Guru Informatik"
+            data-lang-ru="Учитель информатики"
+            data-lang-ar="معلم المعلوماتية"
+            data-lang-de="Informatik-Lehrer">
+          Guru Informatika
+        </h5>
+        <p class="text-muted">SMK Negeri Bojonggambir (2019 – Sekarang)</p>
+        <ul>
+          <li data-lang-id="Mengajar dan mengembangkan kurikulum teknologi"
+              data-lang-en="Teaching and developing technology curriculum"
+              data-lang-ms="Mengajar dan membangun kurikulum teknologi"
+              data-lang-ru="Преподавание и разработка учебной программы по технологиям"
+              data-lang-ar="تدريس وتطوير منهج التكنولوجيا"
+              data-lang-de="Unterrichten und Entwickeln des Technologielehrplans">
+            Mengajar dan mengembangkan kurikulum teknologi
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-6" data-aos="fade-left">
+      <div class="card-custom p-4">
+        <h5 data-lang-id="Tutor Informatika"
+            data-lang-en="Informatics Tutor"
+            data-lang-ms="Tutor Informatik"
+            data-lang-ru="Репетитор по информатике"
+            data-lang-ar="مدرب المعلوماتية"
+            data-lang-de="Informatik-Tutor">
+          Tutor Informatika
+        </h5>
+        <p class="text-muted">PKBM Celah Cahaya (2019 – Sekarang)</p>
+        <ul>
+          <li data-lang-id="Membimbing pembelajaran nonformal bidang TIK"
+              data-lang-en="Guiding non-formal learning in ICT"
+              data-lang-ms="Membimbing pembelajaran tidak formal dalam ICT"
+              data-lang-ru="Обучение в сфере ИКТ вне формального образования"
+              data-lang-ar="توجيه التعليم غير الرسمي في تكنولوجيا المعلومات"
+              data-lang-de="Betreuung des informellen Lernens im Bereich IKT">
+            Membimbing pembelajaran nonformal bidang TIK
+          </li>
+        </ul>
       </div>
     </div>
   </div>
+</div>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/lang.js"></script>
-  <script>AOS.init();</script>
-  <div class="container py-5">
-    <h2 class="section-title" data-aos="fade-up">Pengalaman</h2>
-    <div class="underline mb-4" data-aos="zoom-in"></div>
-    <div class="row g-4">
-      <div class="col-md-6" data-aos="fade-right">
-        <div class="card-custom">
-          <h5>Guru Informatika</h5>
-          <p class="text-muted">SMK Negeri Bojonggambir (2019 – Sekarang)</p>
-          <ul><li>Mengajar dan mengembangkan kurikulum teknologi</li></ul>
-        </div>
-      </div>
-      <div class="col-md-6" data-aos="fade-left">
-        <div class="card-custom">
-          <h5>Tutor Informatika</h5>
-          <p class="text-muted">PKBM Celah Cahaya (2019 – Sekarang)</p>
-          <ul><li>Membimbing pembelajaran nonformal bidang TIK</li></ul>
-        </div>
-      </div>
-    </div>
+<!-- Footer -->
+<footer class="text-center text-white py-3 bg-primary mt-5">
+  <div class="container">
+    <p>&copy; <span id="currentYear"></span> Ruli Lesmana. Dibuat dengan <i class="fas fa-heart"></i> dan <i class="fas fa-coffee"></i>.</p>
   </div>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
+</footer>
+
+<!-- Script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script src="js/lang.js"></script>
+<script>
+  document.getElementById("currentYear").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
