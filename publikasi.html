@@ -1,26 +1,109 @@
-<!-- publikasi.html -->
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Publikasi - Ruli Lesmana</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link href="style/style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link href="style/style.css" rel="stylesheet" />
+  <style>
+    .lang-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+  </style>
 </head>
 <body>
-  <div class="container py-5">
-    <h2 class="section-title" data-aos="fade-up">Publikasi</h2>
-    <div class="underline mb-4" data-aos="zoom-in"></div>
-    <ul class="list-unstyled" data-aos="fade-up">
-      <li><strong>Buku:</strong> "Singajaya vs Singapura" (2016)</li>
-      <li><strong>Artikel:</strong> "Meningkatkan Interaksi Membaca..." (2024)</li>
-      <li><strong>Pembicara:</strong> "Blogging untuk Pelajar" (2015)</li>
-    </ul>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Ruli Lesmana</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="ringkasan.html">Ringkasan</a></li>
+        <li class="nav-item"><a class="nav-link" href="pengalaman.html">Pengalaman</a></li>
+        <li class="nav-item"><a class="nav-link" href="pendidikan.html">Pendidikan</a></li>
+        <li class="nav-item"><a class="nav-link" href="kemampuan.html">Kemampuan</a></li>
+        <li class="nav-item"><a class="nav-link active" href="publikasi.html">Publikasi</a></li>
+        <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+      </ul>
+    </div>
   </div>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
+</nav>
+
+<!-- Tombol Bahasa -->
+<div class="lang-toggle">
+  <button class="btn btn-sm btn-outline-primary" onclick="switchLang('id')">🇮🇩 ID</button>
+  <button class="btn btn-sm btn-outline-secondary" onclick="switchLang('en')">🇺🇸 EN</button>
+  <button class="btn btn-sm btn-outline-success" onclick="switchLang('ms')">🇲🇾 MS</button>
+  <button class="btn btn-sm btn-outline-danger" onclick="switchLang('ru')">🇷🇺 RU</button>
+  <button class="btn btn-sm btn-outline-dark" onclick="switchLang('ar')">🇸🇦 AR</button>
+  <button class="btn btn-sm btn-outline-warning" onclick="switchLang('de')">🇩🇪 DE</button>
+</div>
+
+<!-- Konten -->
+<div class="container py-5">
+  <h2 class="section-title text-center" data-aos="fade-up"
+      data-lang-id="Publikasi"
+      data-lang-en="Publications"
+      data-lang-ms="Penerbitan"
+      data-lang-ru="Публикации"
+      data-lang-ar="المنشورات"
+      data-lang-de="Veröffentlichungen">
+    Publikasi
+  </h2>
+  <div class="underline mb-4" data-aos="zoom-in"></div>
+
+  <ul class="list-unstyled fs-5" data-aos="fade-up">
+    <li data-lang-id='<strong>Buku:</strong> "Singajaya vs Singapura" (2016)'
+        data-lang-en='<strong>Book:</strong> "Singajaya vs Singapore" (2016)'
+        data-lang-ms='<strong>Buku:</strong> "Singajaya vs Singapura" (2016)'
+        data-lang-ru='<strong>Книга:</strong> "Сингаджая против Сингапура" (2016)'
+        data-lang-ar='<strong>كتاب:</strong> "سينجاجايا ضد سنغافورة" (2016)'
+        data-lang-de='<strong>Buch:</strong> "Singajaya vs Singapur" (2016)'>
+      <strong>Buku:</strong> "Singajaya vs Singapura" (2016)
+    </li>
+    <li data-lang-id='<strong>Artikel:</strong> "Meningkatkan Interaksi Membaca..." (2024)'
+        data-lang-en='<strong>Article:</strong> "Improving Reading Interaction..." (2024)'
+        data-lang-ms='<strong>Artikel:</strong> "Meningkatkan Interaksi Membaca..." (2024)'
+        data-lang-ru='<strong>Статья:</strong> "Повышение взаимодействия с чтением..." (2024)'
+        data-lang-ar='<strong>مقال:</strong> "تعزيز التفاعل مع القراءة..." (2024)'
+        data-lang-de='<strong>Artikel:</strong> "Verbesserung der Leseinteraktion..." (2024)'>
+      <strong>Artikel:</strong> "Meningkatkan Interaksi Membaca..." (2024)
+    </li>
+    <li data-lang-id='<strong>Pembicara:</strong> "Blogging untuk Pelajar" (2015)'
+        data-lang-en='<strong>Speaker:</strong> "Blogging for Students" (2015)'
+        data-lang-ms='<strong>Penceramah:</strong> "Blogging untuk Pelajar" (2015)'
+        data-lang-ru='<strong>Спикер:</strong> "Блоггинг для студентов" (2015)'
+        data-lang-ar='<strong>متحدث:</strong> "التدوين للطلاب" (2015)'
+        data-lang-de='<strong>Redner:</strong> "Bloggen für Schüler" (2015)'>
+      <strong>Pembicara:</strong> "Blogging untuk Pelajar" (2015)
+    </li>
+  </ul>
+</div>
+
+<!-- Footer -->
+<footer class="text-center text-white py-3 bg-primary mt-5">
+  <div class="container">
+    <p>&copy; <span id="currentYear"></span> Ruli Lesmana. Dibuat dengan <i class="fas fa-heart"></i> dan <i class="fas fa-coffee"></i>.</p>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script src="js/lang.js"></script>
+<script>
+  document.getElementById("currentYear").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
