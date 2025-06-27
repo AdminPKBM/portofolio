@@ -11,6 +11,32 @@
   <link href="style/style.css" rel="stylesheet">
 </head>
 <body>
+  <div class="lang-toggle">
+    <button class="btn btn-sm btn-outline-primary" onclick="switchLang('id')">🇮🇩 ID</button>
+    <button class="btn btn-sm btn-outline-secondary" onclick="switchLang('en')">🇺🇸 EN</button>
+    <button class="btn btn-sm btn-outline-success" onclick="switchLang('ms')">🇲🇾 MS</button>
+    <button class="btn btn-sm btn-outline-danger" onclick="switchLang('ru')">🇷🇺 RU</button>
+    <button class="btn btn-sm btn-outline-dark" onclick="switchLang('ar')">🇸🇦 AR</button>
+    <button class="btn btn-sm btn-outline-warning" onclick="switchLang('de')">🇩🇪 DE</button>
+  </div>
+
+  <div class="container py-5">
+    <h2 class="section-title text-center" data-aos="fade-up" data-lang-id="[[TITLE_ID]]" data-lang-en="[[TITLE_EN]]" data-lang-ms="[[TITLE_MS]]" data-lang-ru="[[TITLE_RU]]" data-lang-ar="[[TITLE_AR]]" data-lang-de="[[TITLE_DE]]">
+      [[TITLE_ID]]
+    </h2>
+    <div class="underline mb-4" data-aos="zoom-in"></div>
+    <div class="row justify-content-center">
+      <div class="col-md-10" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-custom p-4">
+          [[CONTENT_MULTILANG]]
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/lang.js"></script>
+  <script>AOS.init();</script>
   <div class="container py-5">
     <h2 class="section-title" data-aos="fade-up">Pendidikan</h2>
     <div class="underline mb-4" data-aos="zoom-in"></div>
