@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Publikasi - Ruli Lesmana</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <link href="style/style.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kemampuan - Ruli Lesmana</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="style/style.css" rel="stylesheet">
   <style>
     .lang-toggle {
       position: fixed;
@@ -18,92 +18,115 @@
   </style>
 </head>
 <body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Ruli Lesmana</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="ringkasan.html">Ringkasan</a></li>
+          <li class="nav-item"><a class="nav-link" href="pengalaman.html">Pengalaman</a></li>
+          <li class="nav-item"><a class="nav-link" href="pendidikan.html">Pendidikan</a></li>
+          <li class="nav-item"><a class="nav-link active" href="kemampuan.html">Kemampuan</a></li>
+          <li class="nav-item"><a class="nav-link" href="publikasi.html">Publikasi</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">Ruli Lesmana</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="ringkasan.html">Ringkasan</a></li>
-        <li class="nav-item"><a class="nav-link" href="pengalaman.html">Pengalaman</a></li>
-        <li class="nav-item"><a class="nav-link" href="pendidikan.html">Pendidikan</a></li>
-        <li class="nav-item"><a class="nav-link" href="kemampuan.html">Kemampuan</a></li>
-        <li class="nav-item"><a class="nav-link active" href="publikasi.html">Publikasi</a></li>
-        <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
-      </ul>
+  <!-- Bahasa -->
+  <div class="lang-toggle">
+    <button class="btn btn-sm btn-outline-primary" onclick="switchLang('id')">🇮🇩 ID</button>
+    <button class="btn btn-sm btn-outline-secondary" onclick="switchLang('en')">🇺🇸 EN</button>
+    <button class="btn btn-sm btn-outline-success" onclick="switchLang('ms')">🇲🇾 MS</button>
+    <button class="btn btn-sm btn-outline-danger" onclick="switchLang('ru')">🇷🇺 RU</button>
+    <button class="btn btn-sm btn-outline-dark" onclick="switchLang('ar')">🇸🇦 AR</button>
+    <button class="btn btn-sm btn-outline-warning" onclick="switchLang('de')">🇩🇪 DE</button>
+  </div>
+
+  <!-- Konten Kemampuan -->
+  <div class="container py-5">
+    <h2 class="section-title text-center" data-aos="fade-up"
+        data-lang-id="Kemampuan"
+        data-lang-en="Skills"
+        data-lang-ms="Kemahiran"
+        data-lang-ru="Навыки"
+        data-lang-ar="المهارات"
+        data-lang-de="Fähigkeiten">Kemampuan</h2>
+
+    <div class="underline mb-4" data-aos="zoom-in"></div>
+
+    <div class="row g-4">
+      <div class="col-md-6" data-aos="fade-up">
+        <div class="card-custom p-4">
+          <h5><i class="fas fa-language"></i> Bahasa Indonesia</h5>
+          <p>Fasih secara lisan dan tulisan, digunakan sebagai bahasa utama dalam mengajar, menulis, dan berkomunikasi profesional.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6" data-aos="fade-up">
+        <div class="card-custom p-4">
+          <h5><i class="fas fa-globe"></i> Bahasa Inggris</h5>
+          <p>Memahami percakapan dasar hingga menengah, digunakan dalam membaca literatur akademik dan dokumentasi teknologi.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6" data-aos="fade-up">
+        <div class="card-custom p-4">
+          <h5><i class="fas fa-desktop"></i> Komputer</h5>
+          <p>Mahir menggunakan perangkat lunak Office, sistem operasi Windows/Linux, serta troubleshooting dasar perangkat keras.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6" data-aos="fade-up">
+        <div class="card-custom p-4">
+          <h5><i class="fas fa-palette"></i> Desain Komunikasi Visual</h5>
+          <p>Berpengalaman dalam desain grafis menggunakan Canva, CorelDraw, dan Photoshop untuk kebutuhan presentasi, promosi, dan edukasi.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6" data-aos="fade-up">
+        <div class="card-custom p-4">
+          <h5><i class="fas fa-code"></i> Pemrograman Web</h5>
+          <p>Menguasai HTML, CSS, PHP, JavaScript, serta framework dasar untuk pengembangan situs web dinamis dan interaktif.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6" data-aos="fade-up">
+        <div class="card-custom p-4">
+          <h5><i class="fas fa-blog"></i> Menulis Blog</h5>
+          <p>Aktif menulis artikel blog bertema teknologi, pendidikan, dan literasi melalui platform:
+            <ul>
+              <li><i class="fab fa-facebook"></i> <a href="https://facebook.com/kangruli" target="_blank">Facebook</a></li>
+              <li><i class="fab fa-instagram"></i> <a href="https://instagram.com/kangruli" target="_blank">Instagram</a></li>
+              <li><i class="fab fa-x-twitter"></i> <a href="https://twitter.com/kangruli" target="_blank">Twitter/X</a></li>
+              <li><i class="fas fa-globe"></i> <a href="https://www.kangruli.web.id" target="_blank">Blog Pribadi</a></li>
+              <li><i class="fas fa-newspaper"></i> <a href="https://www.kompasiana.com/kangruli" target="_blank">Kompasiana</a></li>
+            </ul>
+          </p>
+        </div>
+      </div>
     </div>
   </div>
-</nav>
 
-<!-- Tombol Bahasa -->
-<div class="lang-toggle">
-  <button class="btn btn-sm btn-outline-primary" onclick="switchLang('id')">🇮🇩 ID</button>
-  <button class="btn btn-sm btn-outline-secondary" onclick="switchLang('en')">🇺🇸 EN</button>
-  <button class="btn btn-sm btn-outline-success" onclick="switchLang('ms')">🇲🇾 MS</button>
-  <button class="btn btn-sm btn-outline-danger" onclick="switchLang('ru')">🇷🇺 RU</button>
-  <button class="btn btn-sm btn-outline-dark" onclick="switchLang('ar')">🇸🇦 AR</button>
-  <button class="btn btn-sm btn-outline-warning" onclick="switchLang('de')">🇩🇪 DE</button>
-</div>
+  <!-- Footer -->
+  <footer class="text-center text-white py-3 bg-primary mt-5">
+    <div class="container">
+      <p>&copy; <span id="currentYear"></span> Ruli Lesmana. Dibuat dengan <i class="fas fa-heart"></i> dan <i class="fas fa-coffee"></i>.</p>
+    </div>
+  </footer>
 
-<!-- Konten -->
-<div class="container py-5">
-  <h2 class="section-title text-center" data-aos="fade-up"
-      data-lang-id="Publikasi"
-      data-lang-en="Publications"
-      data-lang-ms="Penerbitan"
-      data-lang-ru="Публикации"
-      data-lang-ar="المنشورات"
-      data-lang-de="Veröffentlichungen">
-    Publikasi
-  </h2>
-  <div class="underline mb-4" data-aos="zoom-in"></div>
-
-  <ul class="list-unstyled fs-5" data-aos="fade-up">
-    <li data-lang-id='<strong>Buku:</strong> "Singajaya vs Singapura" (2016)'
-        data-lang-en='<strong>Book:</strong> "Singajaya vs Singapore" (2016)'
-        data-lang-ms='<strong>Buku:</strong> "Singajaya vs Singapura" (2016)'
-        data-lang-ru='<strong>Книга:</strong> "Сингаджая против Сингапура" (2016)'
-        data-lang-ar='<strong>كتاب:</strong> "سينجاجايا ضد سنغافورة" (2016)'
-        data-lang-de='<strong>Buch:</strong> "Singajaya vs Singapur" (2016)'>
-      <strong>Buku:</strong> "Singajaya vs Singapura" (2016)
-    </li>
-    <li data-lang-id='<strong>Artikel:</strong> "Meningkatkan Interaksi Membaca..." (2024)'
-        data-lang-en='<strong>Article:</strong> "Improving Reading Interaction..." (2024)'
-        data-lang-ms='<strong>Artikel:</strong> "Meningkatkan Interaksi Membaca..." (2024)'
-        data-lang-ru='<strong>Статья:</strong> "Повышение взаимодействия с чтением..." (2024)'
-        data-lang-ar='<strong>مقال:</strong> "تعزيز التفاعل مع القراءة..." (2024)'
-        data-lang-de='<strong>Artikel:</strong> "Verbesserung der Leseinteraktion..." (2024)'>
-      <strong>Artikel:</strong> "Meningkatkan Interaksi Membaca..." (2024)
-    </li>
-    <li data-lang-id='<strong>Pembicara:</strong> "Blogging untuk Pelajar" (2015)'
-        data-lang-en='<strong>Speaker:</strong> "Blogging for Students" (2015)'
-        data-lang-ms='<strong>Penceramah:</strong> "Blogging untuk Pelajar" (2015)'
-        data-lang-ru='<strong>Спикер:</strong> "Блоггинг для студентов" (2015)'
-        data-lang-ar='<strong>متحدث:</strong> "التدوين للطلاب" (2015)'
-        data-lang-de='<strong>Redner:</strong> "Bloggen für Schüler" (2015)'>
-      <strong>Pembicara:</strong> "Blogging untuk Pelajar" (2015)
-    </li>
-  </ul>
-</div>
-
-<!-- Footer -->
-<footer class="text-center text-white py-3 bg-primary mt-5">
-  <div class="container">
-    <p>&copy; <span id="currentYear"></span> Ruli Lesmana. Dibuat dengan <i class="fas fa-heart"></i> dan <i class="fas fa-coffee"></i>.</p>
-  </div>
-</footer>
-
-<!-- Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>AOS.init();</script>
-<script src="js/lang.js"></script>
-<script>
-  document.getElementById("currentYear").textContent = new Date().getFullYear();
-</script>
+  <!-- Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script src="js/lang.js"></script>
+  <script>
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
